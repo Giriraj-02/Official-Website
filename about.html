@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Me - Giriraj Singh Chouhan</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f0f4f8;
+      color: #333;
+      font-size: 14px;
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 8px 15px;
+      background-color: #1e2a38;
+      color: #fff;
+    }
+
+    .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 10px;
+      padding: 0;
+      margin: 0;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .nav-links a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 14px;
+      padding: 5px;
+    }
+
+    .btn {
+      background: none;
+      border: none;
+      color: white;
+      font-size: 14px;
+      cursor: pointer;
+      padding: 5px 10px;
+    }
+
+    .section {
+      padding: 20px 15px;
+      max-width: 95%;
+      margin: 10px auto;
+      background: linear-gradient(to bottom right, #e6f0ff, #ffffff);
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .about-content {
+      line-height: 1.6;
+    }
+
+    ul {
+      padding-left: 15px;
+    }
+
+    ul li {
+      margin-bottom: 8px;
+      font-size: 14px;
+    }
+
+    h2 {
+      font-size: 22px;
+      margin-bottom: 15px;
+    }
+
+    h3 {
+      font-size: 18px;
+      margin: 15px 0 10px;
+    }
+
+    .achievement-title {
+      font-weight: bold;
+      font-size: 14px;
+      color: #1e2a38;
+      margin-bottom: 8px;
+      text-align: center;
+    }
+
+    .gallery-row {
+      display: flex;
+      gap: 10px;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin: 15px 0 20px;
+    }
+
+    .movie-card {
+      flex: 1 1 120px;
+      max-width: 120px;
+      text-align: center;
+    }
+
+    .movie-card img {
+      width: 100%;
+      height: 120px;
+      object-fit: cover;
+      border-radius: 6px;
+      box-shadow: 0 0 4px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease-in-out, box-shadow 0.3s ease;
+    }
+
+    .movie-card img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+    }
+
+    @media (min-width: 768px) {
+      body {
+        font-size: 16px;
+      }
+
+      .navbar {
+        padding: 10px 30px;
+      }
+
+      .nav-links {
+        gap: 20px;
+      }
+
+      .nav-links a,
+      .btn {
+        font-size: 16px;
+      }
+
+      .section {
+        padding: 30px 25px;
+        max-width: 900px;
+      }
+
+      ul li {
+        font-size: 16px;
+      }
+
+      h2 {
+        font-size: 28px;
+      }
+
+      h3 {
+        font-size: 22px;
+      }
+
+      .achievement-title {
+        font-size: 18px;
+      }
+
+      .movie-card {
+        flex: 1 1 200px;
+        max-width: 200px;
+      }
+
+      .movie-card img {
+        height: 200px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <nav class="navbar">
+    <h1 class="logo">Giriraj</h1>
+    <a href="index.html" class="btn">Back to Homepage</a>
+  </nav>
+  <nav class="navbar">
+    <h1 class="logo"></h1>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="Projects.html">Projects</a></li>
+      <li><a href="favourites.html">Favourites</a></li>
+      <li><a href="Contact.html">Contact</a></li>
+      <li><a href="about.html">About</a></li>
+    </ul>
+  </nav>
+
+  <section class="section">
+    <h2>About Me</h2>
+    <div class="about-content">
+      <p>👋 I'm <strong>Giriraj Singh Chouhan</strong>, a passionate Computer Science undergraduate and aspiring Full
+        Stack Java Developer. I specialize in developing robust web applications and writing optimized, scalable code.
+        With a solid foundation in data structures, algorithms, and software architecture, I'm driven by a
+        problem-solving mindset and a strong interest in system design, backend integration, and cloud deployment.</p>
+
+      <h3>📚 Education</h3>
+      <ul>
+        <li>B.Tech in Computer Science – Poornima Institute of Engineering and Technology (Batch 2027)</li>
+        <li>Intermediate – Shree J.K. Public School, Sitamau, Mandsaur, M.P. (CBSE Affiliated)</li>
+        <li>High School – Paramount Academy, Sitamau, Mandsaur, M.P. (CBSE Affiliated)</li>
+      </ul>
+
+      <h3>🏆 Achievements</h3>
+      <ul>
+        <li>Completed 100+ DSA questions in Java</li>
+        <li>Built 5+ projects</li>
+      </ul>
+
+      <div class="gallery-row">
+        <div class="movie-card">
+          <div class="achievement-title">🏅 Student of the Year – Class 9th</div>
+          <img src="images/student_of_the_year.jpg.png" alt="Student of the Year">
+        </div>
+        <div class="movie-card">
+          <div class="achievement-title">🏆 Sports Person of the Year – Class 12th</div>
+          <img src="images/sports.jpg.jpg" alt="Sports Person of the Year">
+        </div>
+      </div>
+
+      <div class="gallery-row">
+        <div class="achievement-title" style="width: 100%;">🥈 State Level Silver Medalist – Rugby</div>
+        <div class="movie-card">
+          <img src="images/statelevel.jpg.jpg" alt="State Level Medal 1">
+        </div>
+        <div class="movie-card">
+          <img src="images/statelevel.jpg (2).jpg" alt="State Level Medal 2">
+        </div>
+      </div>
+    </div>
+  </section>
+</body>
+
+</html>

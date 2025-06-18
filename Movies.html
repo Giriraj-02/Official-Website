@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Favourite Movies</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #8a8e93;
+    }
+    .navbar {
+      background-color: #2c3e50;
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+    }
+    .logo {
+      font-size: 24px;
+      font-weight: bold;
+    }
+    .btn {
+      background-color: #2c658c;
+      color: white;
+      padding: 8px 16px;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+    .section {
+      padding: 2rem;
+      text-align: center;
+    }
+    h2 {
+      margin-bottom: 30px;
+    }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+      padding: 0 20px;
+    }
+    .movie-card, .card {
+      background-color: #ffffff;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      padding: 15px;
+    }
+    .movie-card img, .card img {
+      width: 100%;
+      height: 300px;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+    .movie-card p, .card p {
+      margin-top: 10px;
+      font-size: 16px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar">
+    <h1 class="logo">Giriraj</h1>
+    <a href="favourites.html" class="btn">Back to Favourites</a>
+  </nav>
+
+  <section class="section">
+    <h2>🎬 Favourite Movies</h2>
+    <div class="gallery">
+      <div class="movie-card">
+        <img src="images/sambahadur.jpg" alt="Sambahadur Movie Poster">
+        <p>Sambahadur</p>
+      </div>
+
+      <div class="movie-card">
+        <img src="images/chhava.jpg" alt="Chava">
+        <p>Chhaava</p>
+      </div>
+
+      <div class="card">
+        <img src="images/salaar.jpg" alt="Salaar">
+        <p>Salaar</p>
+      </div>
+
+      <div class="card">
+        <img src="images/kgfchapter2.jpg" alt="KGF Chapter 2">
+        <p>KGF Chapter 2</p>
+      </div>
+
+      <div class="card">
+        <img src="images/12strong.jpg" alt="12 Strong">
+        <p>12 Strong</p>
+      </div>
+
+      <div class="card">
+        <img src="images/Lakshya.jpg" alt="Lakshya">
+        <p> Lakshya</p>
+      </div>
+    </div>
+  </section>
+</body>
+</html>

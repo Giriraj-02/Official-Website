@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>My Hobbies</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #c1c1c1;
+    }
+
+    .navbar {
+      background-color: #34495e;
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+    }
+
+    .logo {
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    .btn {
+      background-color: #2980b9;
+      color: white;
+      padding: 8px 16px;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+
+    .section {
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    h2 {
+      margin-bottom: 40px;
+      font-size: 30px;
+      color: #2c3e50;
+    }
+
+    .hobby-list {
+      max-width: 1000px;
+      margin: auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 30px;
+    }
+
+    .hobby {
+      background-color: #f9f9f9;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+      padding: 20px;
+      text-align: center;
+    }
+
+    .hobby img {
+      width: 90%;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 8px;
+      margin: 15px 0;
+    }
+
+    .hobby h3 {
+      margin: 10px 0;
+      font-size: 20px;
+      color: #e67e22;
+    }
+
+    .hobby p {
+      font-size: 15px;
+      line-height: 1.6;
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar">
+    <h1 class="logo">Giriraj</h1>
+    <a href="favourites.html" class="btn">Back to Favourites</a>
+  </nav>
+
+  <section class="section">
+    <h2>🏏 My Hobbies</h2>
+    <div class="hobby-list">
+
+      <div class="hobby">
+        <h3>🏊‍♂️ Swimming</h3>
+        <img src="images/swimming.jpg" alt="Swimming" />
+        <p>Swimming helps me stay fit and relaxed. It's one of the best full-body workouts and gives me peace of mind after a long day.</p>
+      </div>
+
+      <div class="hobby">
+        <h3>🏏 Watching Cricket</h3>
+        <img src="images/cricket.jpg" alt="Watching Cricket" />
+        <p>Cricket is not just a sport but a passion. I enjoy watching every format—Test, ODI, and T20—and I never miss a match of Team India!</p>
+      </div>
+
+      <div class="hobby">
+        <h3>💻 Coding</h3>
+        <img src="images/coding.jpg" alt="Coding" />
+        <p>I love building things with code. Whether it’s solving problems, creating websites, or learning new technologies, coding gives me purpose and challenge.</p>
+      </div>
+
+      <div class="hobby">
+        <h3>🎧 Listening to Podcasts</h3>
+        <img src="images/podcast.jpg" alt="Listening to Podcasts" />
+        <p>Podcasts help me learn new things and stay inspired. I often listen to motivational talks, tech discussions, geopolitics and personal development episodes.</p>
+      </div>
+
+    </div>
+  </section>
+</body>
+</html>

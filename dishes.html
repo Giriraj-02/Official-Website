@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Favourite Dishes</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #fffdf5;
+    }
+    .navbar {
+      background-color: #d35400;
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0.8rem 1rem;
+    }
+    .logo {
+      font-size: 20px;
+      font-weight: bold;
+    }
+    .btn {
+      background-color: #e67e22;
+      color: white;
+      padding: 6px 12px;
+      text-decoration: none;
+      border-radius: 4px;
+      font-size: 14px;
+    }
+    .section {
+      padding: 1rem;
+      text-align: center;
+    }
+    h2 {
+      margin-bottom: 20px;
+      font-size: 22px;
+    }
+    .dish-gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+      gap: 15px;
+      padding: 0 10px;
+      max-width: 100%;
+      margin: auto;
+    }
+    .dish-card {
+      background-color: #fbe8d3;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      padding: 10px;
+    }
+    .dish-card img {
+      width: 100%;
+      height: 100px;
+      object-fit: cover;
+      border-radius: 6px;
+    }
+    .dish-card p {
+      margin-top: 8px;
+      font-size: 14px;
+      font-weight: bold;
+    }
+
+    @media (min-width: 768px) {
+      .navbar {
+        padding: 1rem 2rem;
+      }
+      .logo {
+        font-size: 24px;
+      }
+      .btn {
+        padding: 8px 16px;
+        font-size: 16px;
+      }
+      .section {
+        padding: 2rem;
+      }
+      h2 {
+        font-size: 28px;
+        margin-bottom: 30px;
+      }
+      .dish-gallery {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 20px;
+        padding: 0 20px;
+        max-width: 1000px;
+      }
+      .dish-card img {
+        height: 160px;
+      }
+      .dish-card p {
+        font-size: 18px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar">
+    <h1 class="logo">Giriraj</h1>
+    <a href="favourites.html" class="btn">Back to Favourites</a>
+  </nav>
+
+  <section class="section">
+    <h2>🍽️ Favourite Dishes</h2>
+    <div class="dish-gallery">
+      <div class="dish-card">
+        <img src="images/matarpaneer.jpg" alt="Matar Paneer">
+        <p>Matar Paneer</p>
+      </div>
+      <div class="dish-card">
+        <img src="images/cholebhature.jpg" alt="Chole Bhature">
+        <p>Chole Bhature</p>
+      </div>
+      <div class="dish-card">
+        <img src="images/bhindi.jpg" alt="Bhindi">
+        <p>Bhindi</p>
+      </div>
+      <div class="dish-card">
+        <img src="images/pizza.jpg" alt="Pizza">
+        <p>Pizza</p>
+      </div>
+      <div class="dish-card">
+        <img src="images/dalbatti.jpg" alt="Paneer Tikka">
+        <p>Dal Baati</p>
+      </div>
+      <div class="dish-card">
+        <img src="images/Biryani.jpg" alt="Biryani">
+        <p>Biryani</p>
+      </div>
+    </div>
+  </section>
+</body>
+</html>

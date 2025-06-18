@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Giriraj's Favourites</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(to right, #e0f7fa, #e1bee7);
+      color: #333;
+      font-size: 14px;
+    }
+
+    .navbar {
+      background-color: #2c3e50;
+      color: white;
+      padding: 10px 15px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .navbar .logo {
+      font-size: 18px;
+      color: white;
+      margin: 0;
+    }
+
+    .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 10px;
+      padding: 0;
+      margin: 0;
+    }
+
+    .nav-links li a {
+      color: white;
+      text-decoration: none;
+      font-size: 14px;
+      padding: 5px;
+    }
+
+    .section h2 {
+      font-size: 24px;
+      margin: 20px 0 15px;
+      text-align: center;
+    }
+
+    .favorites-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+      margin: 20px 10px;
+      padding: 0 5px;
+    }
+
+    .fav-card {
+      background: #ffffff;
+      border-radius: 10px;
+      padding: 15px 10px;
+      width: 140px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .fav-card:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+    }
+
+    .fav-card h4 {
+      font-size: 16px;
+      margin: 10px 0;
+    }
+
+    .fav-card h4 span {
+      font-size: 24px;
+      display: block;
+      margin-bottom: 5px;
+    }
+
+    .btn {
+      background: teal;
+      color: white;
+      padding: 8px 12px;
+      border-radius: 20px;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 12px;
+      transition: background 0.3s;
+      margin-top: 5px;
+    }
+
+    .btn:hover {
+      background: darkcyan;
+    }
+
+    @media (min-width: 768px) {
+      body {
+        font-size: 16px;
+      }
+      
+      .navbar {
+        padding: 15px 30px;
+      }
+      
+      .navbar .logo {
+        font-size: 24px;
+      }
+      
+      .nav-links {
+        gap: 20px;
+      }
+      
+      .nav-links li a {
+        font-size: 16px;
+      }
+      
+      .section h2 {
+        font-size: 32px;
+        margin: 30px 0;
+      }
+      
+      .favorites-container {
+        gap: 25px;
+        margin: 30px 20px;
+      }
+      
+      .fav-card {
+        padding: 20px 15px;
+        width: 200px;
+        border-radius: 12px;
+      }
+      
+      .fav-card h4 {
+        font-size: 22px;
+      }
+      
+      .fav-card h4 span {
+        font-size: 32px;
+      }
+      
+      .btn {
+        padding: 10px 20px;
+        font-size: 16px;
+        border-radius: 25px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <h1 class="logo">Giriraj</h1>
+    <ul class="nav-links">
+    <a href="index.html" class="btn">Back to Homepage</a>
+    <a href="Favourites.html" class="btn">Back to Favourites</a>
+    </ul>
+  </nav>
+
+  <!-- Favourites Page Content -->
+  <section id="favourites" class="section">
+    <h2>Favourites & Hobbies</h2>
+    <div class="favorites-container">
+      <div class="fav-card">
+        <h4><span>🎬</span>Favourite Movies</h4>
+        <a href="Movies.html" class="btn">View Movies</a>
+      </div>
+
+      <div class="fav-card">
+        <h4><span>📺</span>Favourite Web Series</h4>
+        <a href="Webseries.html" class="btn">View Web Series</a>
+      </div>
+
+      <div class="fav-card">
+        <h4><span>🍽️</span>Favourite Dishes</h4>
+        <a href="dishes.html" class="btn">View Dishes</a>
+      </div>
+
+      <div class="fav-card">
+        <h4><span>🏏</span>Hobbies</h4>
+        <a href="hobbies.html" class="btn">View Hobbies</a>
+      </div>
+
+      <div class="fav-card">
+        <h4><span>🌟</span>Role Models</h4>
+        <a href="RoleModel.html" class="btn">View Role Models</a>
+      </div>
+    </div>
+  </section>
+
+</body>
+</html>
